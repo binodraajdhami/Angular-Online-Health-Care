@@ -1,0 +1,118 @@
+.featurelinks {
+    padding: 25px 0;
+    background: #fff;
+}
+
+.featurelinks ul {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.featurelinks ul li {
+    list-style: none;
+}
+
+.featurelinks ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.feature-link-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    border-radius: 300px;
+    transition: all linear 0.3s;
+}
+
+.featurelinks ul li:first-child .feature-link-content {
+    background: #27beaa;
+}
+
+.featurelinks ul li:last-child .feature-link-content {
+    background: #4b87c1;
+}
+
+.feature-link-content .fa {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 24px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    transition: all linear 0.3s;
+}
+
+.featurelinks ul li:first-child .fa {
+    color: #27beaa;
+}
+
+.featurelinks ul li:last-child .fa {
+    color: #4b87c1;
+}
+
+.featurelinks ul li:first-child .feature-link-content:hover {
+    background: #209686;
+    box-shadow: 0 5px 15px -10px #000;
+    transform: translateY(-5px);
+}
+
+.featurelinks ul li:last-child .feature-link-content:hover {
+    background: #37638d;
+    box-shadow: 0 5px 15px -10px #000;
+    transform: translateY(-5px);
+}
+
+.featurelinks ul li:first-child .feature-link-content:hover .fa {
+    color: #209686;
+}
+
+.featurelinks ul li:last-child .feature-link-content:hover .fa {
+    color: #37638d;
+}
+
+.feature-link-content h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.feature-link-content p {
+    color: #fff;
+    font-size: 17px;
+}
+
+@media (max-width: 767px) {
+    .featurelinks ul {
+        width: 100%;
+    }
+
+    .feature-link-content {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .featurelinks ul li:first-child .feature-link-content {
+        margin-bottom: 15px;
+    }
+
+    .feature-link-content .fa {
+        width: 55px;
+        height: 55px;
+    }
+
+    .feature-link-content h4 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .feature-link-content p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}

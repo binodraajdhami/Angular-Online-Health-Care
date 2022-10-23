@@ -1,0 +1,101 @@
+.registration {
+    padding: 100px 0;
+    background: url('./../../../../assets/images/background.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+.registration-content {
+    text-align: center;
+}
+
+.registration-content h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+.registration-content h2 span {
+    display: block;
+    color: #fe7874;
+    font-size: 36px;
+}
+
+.registration-content ul {
+    text-align: center;
+}
+
+.registration-content ul li {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.registration-content ul li a {
+    display: inline-block;
+    padding: 15px;
+    width: 250px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all linear 0.3s;
+}
+
+.registration-content ul li a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px -10px #000;
+}
+
+.registration-content ul li:first-child a {
+    background: #4b87c1;
+}
+
+.registration-content ul li:last-child a {
+    background: #27beaa;
+}
+
+.registration-content ul li:first-child a:hover {
+    background: #37638d;
+}
+
+.registration-content ul li:last-child a:hover {
+    background: #209686;
+}
+
+@media (max-width: 767px) {
+    .registration {
+        padding: 50px 0;
+    }
+
+    .registration-content h2 {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .registration-content h2 span {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .registration-content ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .registration-content ul li:nth-child(2) {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .registration-content ul li a {
+        width: 200px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

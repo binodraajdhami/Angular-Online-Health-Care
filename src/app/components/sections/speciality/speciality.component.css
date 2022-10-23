@@ -1,0 +1,94 @@
+.speciality {
+    padding: 25px 0;
+    background: #fff;
+}
+
+.speciality-heading {
+    margin-bottom: 30px;
+}
+
+.speciality-heading h2 {
+    color: #001737;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.speciality-heading p {
+    color: #7d7b7b;
+    font-size: 18px;
+}
+
+.speciality-heading a {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    float: right;
+    font-size: 14px;
+    color: #fff;
+    background: #4c87c1;
+    text-decoration: none;
+    transition: all linear 0.3s;
+}
+
+.speciality-heading a:hover {
+    background: #37348d;
+}
+
+.speciality-thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.speciality-thumbnail img {
+    width: 100%;
+    height: auto;
+    transition: all linear 0.3s;
+}
+
+.speciality-item:hover .speciality-thumbnail img {
+    transform: scale(1.2, 1.2);
+}
+
+.speciality-description h4 {
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 15px 0 5px;
+}
+
+.speciality-description p {
+    color: #576477;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media (max-width: 767px) {
+    .speciality-heading {
+        margin-bottom: 0;
+    }
+
+    .speciality-heading h2 {
+        font-size: 20px;
+    }
+
+    .speciality-heading p span {
+        display: block;
+        font-size: 14px;
+    }
+
+    .speciality-heading p a {
+        float: none;
+        margin-top: 10px;
+    }
+
+    .speciality-item {
+        margin-top: 30px;
+    }
+
+    .speciality-description h4 {
+        margin: 10px 0 0px;
+    }
+}

@@ -1,0 +1,67 @@
+<mat-sidenav-container class="sidenav-container">
+
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'push' : 'side'">
+        <mat-toolbar>Online Health Care</mat-toolbar>
+        <mat-nav-list>
+            <div class="sidebar-nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a routerLink="/home" routerLinkActive="active" (click)="drawer.toggle()">
+                                <i class="fa fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/consultation" routerLinkActive="active" (click)="drawer.toggle()">
+                                <i class="fa fa-phone"></i>
+                                Consultation
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/specialities" routerLinkActive="active" (click)="drawer.toggle()">
+                                <i class="fa fa-user-md"></i>
+                                Specialities
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/health-package" routerLinkActive="active" (click)="drawer.toggle()">
+                                <i class="fa fa-medkit"></i>
+                                Health Package
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/book-an-appointment" routerLinkActive="active" (click)="drawer.toggle()">
+                                <i class="fa fa-calendar"></i> Book An Appointment
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar color="primary" *ngIf="isHandset$ | async">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <span class="spacer"></span>
+            <div class="login-register">
+                <ul>
+                    <li>
+                        <a routerLink="/login">Login</a>
+                    </li>
+                    <li>
+                        <a routerLink="/signup">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </mat-toolbar>
+
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
