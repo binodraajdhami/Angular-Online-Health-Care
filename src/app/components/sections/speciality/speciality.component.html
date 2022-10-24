@@ -6,8 +6,8 @@
             </p>
         </div>
         <div class="speciality-body">
-            <div class="row">
-                <div class="col-sm-3">
+            <owl-carousel-o [options]="specialitySlider">
+                <ng-template carouselSlide>
                     <div class="speciality-item">
                         <div class="speciality-thumbnail">
                             <img src="./../../../../assets/images/specialities-image-1.jpg" alt="" loading="lazy">
@@ -17,8 +17,8 @@
                             <p>Fever, Stomach Issue, Vomiting, Cough, Headache/Migrane</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="speciality-item">
                         <div class="speciality-thumbnail">
                             <img src="./../../../../assets/images/specialities-image-2.jpg" alt="" loading="lazy">
@@ -28,8 +28,8 @@
                             <p>Acne, Hair Fall, Dark Circles</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="speciality-item">
                         <div class="speciality-thumbnail">
                             <img src="./../../../../assets/images/specialities-image-3.jpg" alt="" loading="lazy">
@@ -39,8 +39,8 @@
                             <p>PCOD, Period Issues, UTI, Preganacy Care, Abdominal Pain</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="speciality-item">
                         <div class="speciality-thumbnail">
                             <img src="./../../../../assets/images/specialities-image-4.jpg" alt="" loading="lazy">
@@ -50,8 +50,8 @@
                             <p>PCOD, Weight Loos, Weight Gain, Diabetes, High BP</p>
                         </div>
                     </div>
-                </div>
-            </div>
+                </ng-template>
+            </owl-carousel-o>
         </div>
     </div>
 </section>

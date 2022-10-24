@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from './app.component';
@@ -33,6 +34,7 @@ import { SpecialityComponent } from './components/sections/speciality/speciality
 import { FeaturelinksComponent } from './components/sections/featurelinks/featurelinks.component';
 import { HealthpakagesComponent } from './components/sections/healthpakages/healthpakages.component';
 import { RegistrationComponent } from './components/sections/registration/registration.component';
+import { GototopComponent } from './components/sections/gototop/gototop.component';
 
 
 @NgModule({
@@ -55,7 +57,8 @@ import { RegistrationComponent } from './components/sections/registration/regist
         FeaturelinksComponent,
         HealthpakagesComponent,
         RegistrationComponent,
-        AppNavigationComponent
+        AppNavigationComponent,
+        GototopComponent
     ],
     imports: [
         BrowserAnimationsModule,
@@ -66,7 +69,8 @@ import { RegistrationComponent } from './components/sections/registration/regist
         MatButtonModule,
         MatSidenavModule,
         MatIconModule,
-        MatListModule
+        MatListModule,
+        CarouselModule
     ],
     providers: [],
     bootstrap: [AppComponent]

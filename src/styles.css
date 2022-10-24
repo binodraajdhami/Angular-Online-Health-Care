@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~animate.css/animate.min.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css";
+@import "~ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css";
 
 * {
     margin: 0;
@@ -39,8 +42,8 @@ li {
 
 /* content-banner */
 .content-banner {
-    height: 300px;
-    background: url('./assets/images/background.jpg') no-repeat top center;
+    height: 100px;
+    background: url('./assets/images/background.jpg') no-repeat fixed top center;
     background-size: cover;
 }
 
@@ -51,15 +54,103 @@ li {
 
 .content .container {
     padding: 30px;
+    min-height: 100vh;
     background: #fff;
 }
 
 .content h1 {
+    position: relative;
     color: #222;
     font-size: 24px;
 }
 
+.content h1::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background: #666;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 45px);
+    left: -17px;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50% !important;
+    border: #fff solid 3px;
+    background-image: linear-gradient(to right, #4b87c1, #1ebba6) !important;
+    font-family: 'fontawesome';
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px !important;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 45px);
+    right: -17px;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50% !important;
+    border: #fff solid 3px;
+    background-image: linear-gradient(to right, #4b87c1, #1ebba6) !important;
+    font-family: 'fontawesome';
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 0 5px;
+    margin-top: 30px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    opacity: 1;
+    transition: all linear 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #fe7574;
+    transform: scale(1.5, 1.5);
+}
+
 @media (max-width: 767px) {
+
+    .owl-nav .owl-prev {
+        top: calc(50% - 30px);
+        left: -11px !important;
+        border-width: 2px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .owl-nav .owl-next {
+        top: calc(50% - 30px);
+        right: -11px !important;
+        border-width: 2px;
+        width: 45px;
+        height: 45px;
+    }
+
     .content-banner {
         height: 0;
     }
@@ -78,4 +169,5 @@ li {
         font-size: 16px;
         font-weight: 700;
     }
+
 }

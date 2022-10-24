@@ -15,15 +15,18 @@
 }
 
 .healthpakages-heading p {
+    position: relative;
     color: #7d7b7b;
     font-size: 18px;
 }
 
 .healthpakages-heading a {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: inline-block;
     padding: 8px 20px;
     border-radius: 5px;
-    float: right;
     font-size: 14px;
     color: #fff;
     background: #4c87c1;
@@ -33,6 +36,10 @@
 
 .healthpakages-heading a:hover {
     background: #37348d;
+}
+
+.healthpakages-item {
+    margin: 0 15px;
 }
 
 .healthpakages-thumbnail {
@@ -107,12 +114,14 @@
     }
 
     .healthpakages-heading p a {
-        float: none;
+        position: relative;
+        top: inherit;
+        right: inherit;
         margin-top: 10px;
     }
 
     .healthpakages-item {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .healthpakages-description h4 {
