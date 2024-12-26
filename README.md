@@ -3,7 +3,7 @@
 
 ## Step 1: git clone
 <pre>
-    git clone [https://github.com/binodraajdhami/Angular-Online-Health-Care.git](https://github.com/binodraajdhami/Angular-Online-Health-Care.git)
+    git clone https://github.com/binodraajdhami/Angular-Online-Health-Care.git
 </pre>
 
 ## Step 2: cd foodwebapp
